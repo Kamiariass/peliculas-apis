@@ -615,6 +615,23 @@ figure.figure:hover img.figure-img {
     font-size: 1.5rem;
     margin: 0 0.3rem;
   }
+
+  .figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+  figure.figure p.fw-bold {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #3399ff;
+    margin-bottom: 0.7rem;
+    margin-left: 3rem;
+}
+
+
 }
 
 /* Responsividad para imágenes en móvil */
