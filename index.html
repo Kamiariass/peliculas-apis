@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parcial 2 APW</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#000000" />
+
+  <link rel="icon" href="sources/icon/icon192.png" type="image/png" />
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="index.html">
+          <img src="sources/icon/icon500.png" alt="Logo App de Películas" width="50" />
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+          <h1 class="ms-3 text-white">Películas App</h1>
+
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="favoritos.html">Favoritos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="datos-alumnos.html">Datos Alumnos</a>
+            </li>
+          </ul>
+
+          <div id="estado-conexion" class="ms-3 d-flex align-items-center text-white">
+            <span id="estado-circulo" class="me-2" style="width: 12px; height: 12px; border-radius: 50%; display: inline-block;"></span>
+            <span id="estado-texto">Online</span>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mt-4">
+    <h2 class="text-center mb-4">¡Bienvenido!</h2>
+    <p class="text-center">Explora y guarda todas tus películas favoritas</p>
+    <button id="btn-instalar" class="btn btn-primary ms-3" style="display: none;">Instalar App</button>
+
+
+    <section class="bg-light py-3 rounded shadow-sm">
+      <div class="container d-flex gap-2">
+        <input type="text" id="buscador" class="form-control" placeholder="Buscar películas por nombre..." aria-label="Buscar películas" />
+        <button id="btn-buscar" class="btn btn-primary">Buscar</button>
+      </div>
+    </section>
+
+    <section id="peliculas" class="container my-4">
+  <div id="peliculas-list"></div>
+</section>
+
+  </main>
+
+  <footer class="footer-custom mt-auto text-center py-3 bg-dark text-white">
+    <div class="container">
+      <p>&copy; Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts externos -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Scripts propios -->
+  <script src="js/main.js"></script>
+  <script src="js/buscador.js"></script>
+  <script src="js/conexion.js"></script>
+  <script src="js/instalacion.js"></script> <!-- ESTE ES IMPORTANTE -->
+  <script src="js/favoritos.js"></script>
+  <script src="js/detalles.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Detalle de Película</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="index.html">
+          <img src="sources/icon/icon500.png" alt="Logo App de Películas" width="50" />
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+          <h1 class="ms-3 text-white">Películas App</h1>
+
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="favoritos.html">Favoritos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="datos-alumnos.html">Datos Alumnos</a>
+            </li>
+          </ul>
+
+          <div id="estado-conexion" class="ms-3 d-flex align-items-center text-white">
+            <span id="estado-circulo" class="me-2" style="width: 12px; height: 12px; border-radius: 50%; display: inline-block;"></span>
+            <span id="estado-texto">Online</span>
+          </div>
+
+          <!-- Botón instalar, oculto inicialmente -->
+          <button id="btn-instalar" class="btn btn-primary ms-3" style="display: none;">Instalar App</button>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <div class="mb-4">
+  <a href="index.html" class="btn btn-primary me-2"><i class="fas fa-arrow-left"></i> Ir a Inicio</a>
+  <a href="favoritos.html" class="btn btn-primary"><i class="fas fa-heart"></i> Ir a Favoritos</a>
+</div>
+
+
+    <div id="detalle-pelicula" class="row gy-4"></div>
+  </main>
+
+  <footer class="footer-custom mt-auto text-center py-3 bg-dark text-white">
+    <div class="container">
+      <p>&copy; Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/favoritos.js"></script>
+  <script src="js/conexion.js"></script>
+  <script src="js/detalles.js"></script>
+  <script src="js/instalacion.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "Películas Nueva App",
+  "short_name": "PelisNueva",
+  "description": "Explorá y guardá tus películas favoritas en esta nueva versión",
+  "start_url": "index.html?app=nueva",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#000000",
+  "theme_color": "#122c56",
+  "icons": [
+    {
+      "src": "sources/icon/icon192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "sources/icon/icon512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
