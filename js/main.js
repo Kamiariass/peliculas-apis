@@ -1,7 +1,20 @@
-// js/main.js
 
 const API_KEY = '6c683a835cdd20acc7f628df1f598354';
 const API_URL = `https://api.themoviedb.org/3/discover/movie?language=es-ES&sort_by=popularity.desc&api_key=${API_KEY}`;
+
+if('serviceWorker' in navigator){
+    window.addEventListener('load', function(){
+        navigator.serviceWorker.register('service-worker.js')
+            .then(function(registration){
+                // registro ok
+                console.log('Service Worker registrado, ', registration.scope);
+                console.log('Service Worker contenido, ', registration)
+            }).catch(function(error){
+                //registro fallo :(
+                console.log('El registro del serviceWorker fallo: ', error)
+            })
+    })
+}
 
 document.addEventListener('DOMContentLoaded', () => {
   cargarPeliculas();
